@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0F172A;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: #0F172A;
+}
+
+header .logo {
+  color: #8B5CF6;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.home {
+  position: relative;
+  text-align: center;
+  padding: 80px 20px;
+  overflow: hidden;
+  background: linear-gradient(to right, #0F172A, #1E293B);
+}
+
+.fotoPerfil {
+  width: 180px;
+  border-radius: 50%;
+  border: 5px solid #25D366;
+  margin-bottom: 20px;
+}
+
+.home h1 {
+  font-size: 36px;
+}
+
+.home h2 {
+  color: #7C3AED;
+  margin-top: 10px;
+}
+
+.home .cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.home .card {
+  background: #1e293b;
+  padding: 15px;
+  text-align: center;
+  border-radius: 50px;
+  transition: 0.4s;
+  width: 25px;
+  cursor: pointer;
+}
+
+.home .card i {
+  font-size: 20px;
+  color: white;
+}
+
+.home .card:hover {
+  background: #7C3AED;
+}
+
+.home .card:hover i {
+  color: #000;
+}
+
+.about {
+    padding: 60px;
+}
+
+.about h2 {
+  margin-bottom: 40px;
+  color: #7C3AED;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contato, .sobreMim, .tecnologias {
+    flex: 1;
+    text-align: center;
+}
+
+.sobreMim p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about .cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.about .card {
+  background: #1e293b;
+  padding: 15px;
+  text-align: center;
+  border-radius: 50px;
+  width: 120px;
+  transition: 0.4s;
+}
+
+.about .card:hover {
+  background: #7C3AED;
+}
+
+.projetos {
+  text-align: center;
+  background: linear-gradient(to right, #0F172A, #111827);
+  padding-top: 30px;
+}
+
+.projetos h2 {
+  color: #7C3AED
+}
+
+.projeto1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 5rem 5rem;
+}
+
+.projeto1-info {
+  flex: 1;
+}
+
+.projeto1-info p {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.projeto1-imagem {
+  flex: 1.2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.projeto1-imagem img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.projetos a {
+  color: #7C3AED;;
+}
+
+.projetos a:hover {
+  color: #3B82F6;
+}
