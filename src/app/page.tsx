@@ -3,67 +3,88 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <>
+      <section className={styles.home}>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src="/img/fotoPerfil.jpg"
+          alt="Foto de Erick de Paiva Alberto"
+          width={180}
+          height={180}
+          className={styles.fotoPerfil}
           priority
         />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
+        <h1>Erick de Paiva Alberto</h1>
+        <h2>Desenvolvedor</h2>
+
+        <div className={styles.socialCards}>
           <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://www.linkedin.com/in/erick-paiva-1b190437a/"
             target="_blank"
             rel="noopener noreferrer"
+            className={styles.socialCard}
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
+            <i className="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
           </a>
+
           <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://github.com/Erick-de-Paiva"
             target="_blank"
             rel="noopener noreferrer"
+            className={styles.socialCard}
           >
-            Documentation
+            <i className="fa-brands fa-github"></i>
+            <span>GitHub</span>
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className={styles.about}>
+        <div className={styles.aboutContainer}>
+          <div className={styles.contato}>
+            <h2>Contatos</h2>
+            <p>
+              <i className="fa-solid fa-envelope"></i>
+              <strong>Email:</strong> paiva.erick2001@gmail.com
+            </p>
+            <p>
+              <i className="fa-solid fa-phone"></i>
+              <strong>Celular:</strong> +55 (21) 96958-7080
+            </p>
+          </div>
+
+          <div className={styles.sobreMim}>
+            <h2>Sobre mim</h2>
+            <p>
+              Sou estudante de Análise e Desenvolvimento de Sistemas, com foco e dedicação contínua aos estudos em programação.
+            </p>
+            <p>
+              Tenho grande interesse por tecnologia, busco sempre desenvolver minha lógica de programação e estruturar soluções de forma organizada e eficiente.
+            </p>
+            <p>
+              Também me preocupo com a construção de interfaces bem estruturadas e visualmente agradáveis, trazendo funcionalidade e excelente experiência do usuário.
+            </p>
+            <p>
+              Estou em constante evolução e motivado a crescer profissionalmente na área de tecnologia.
+            </p>
+          </div>
+
+          <div className={styles.tecnologias}>
+            <h2>Tecnologias</h2>
+            <div className={styles.techCards}>
+              <div className={styles.techCard}>HTML</div>
+              <div className={styles.techCard}>CSS</div>
+              <div className={styles.techCard}>JavaScript</div>
+              <div className={styles.techCard}>TypeScript</div>
+              <div className={styles.techCard}>React</div>
+              <div className={styles.techCard}>Next.js</div>
+              <div className={styles.techCard}>Python</div>
+              <div className={styles.techCard}>Git</div>
+              <div className={styles.techCard}>GitHub</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

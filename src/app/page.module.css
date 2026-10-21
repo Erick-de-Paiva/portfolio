@@ -1,150 +1,130 @@
-.page {
-  --background: #fafafa;
-  --foreground: #fff;
-
-  --text-primary: #000;
-  --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+.home {
+  text-align: center;
+  padding: 80px 20px 60px 20px;
+  background: linear-gradient(to right, #111111, #1A1A1A);
 }
 
-.main {
-  display: flex;
-  flex: 1;
-  width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+.fotoPerfil {
+  width: 180px;
+  max-width: 40%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #25D366;
+  margin-bottom: 20px;
+  object-fit: cover;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
-}
-
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
+.home h1 {
+  font-size: 2.2rem;
   font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
+  letter-spacing: -1px;
+  margin-bottom: 5px;
 }
 
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
-}
-
-.intro a {
+.home h2 {
+  color: #7C3AED;
+  font-size: 1.4rem;
   font-weight: 500;
-  color: var(--text-primary);
+  margin-bottom: 25px;
 }
 
-.ctas {
+.socialCards {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
-}
-
-.ctas a {
-  display: flex;
+  gap: 25px;
   justify-content: center;
+}
+
+.socialCard {
+  background: #262626;
+  padding: 14px 22px;
+  border-radius: 50px;
+  transition: 0.4s;
+  display: flex;
   align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  cursor: pointer;
-  width: fit-content;
+  gap: 10px;
+  color: #F9FAFB;
+  text-decoration: none;
+  font-size: 15px;
   font-weight: 500;
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
+.socialCard:hover {
+  background: #7C3AED;
+  color: #fff;
 }
 
-a.secondary {
-  border-color: var(--button-secondary-border);
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
+.about h2 {
+  color: #7C3AED;
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: 35px;
 }
 
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
-  }
-
-  .intro {
-    gap: 16px;
-  }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
-  }
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: left;
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
-  }
+.contato, .sobreMim, .tecnologias {
+  flex: 1 1 280px;
 }
 
-.code {
-  font-family: var(--font-geist-mono);
-  font-size: 0.9em;
-  background: color-mix(in srgb, currentColor 8%, transparent);
-  padding: 0.1em 0.4em;
-  border-radius: 6px;
+.contato h2, .sobreMim h2, .tecnologias h2 {
+  text-align: center;
+}
+
+.sobreMim p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #D1D5DB;
+}
+
+.contato p {
+  margin-bottom: 15px;
+  color: #D1D5DB;
+}
+
+.contato p i {
+  color: #7C3AED;
+  margin-right: 8px;
+}
+
+.techCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.techCard {
+  background: #262626;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: 0.4s;
+}
+
+.techCard:hover {
+  background: #7C3AED;
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
