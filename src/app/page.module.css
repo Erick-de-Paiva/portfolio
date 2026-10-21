@@ -7,7 +7,6 @@
   align-items: center;
 }
 
-/* Foto de Perfil com Hover e Borda Verde */
 .fotoPerfil {
   width: 180px;
   max-width: 40%;
@@ -26,20 +25,21 @@
 
 .home h1 {
   font-size: 2.2rem;
-  font-weight: 600;
-  letter-spacing: -1px;
-  margin-bottom: 5px;
+  font-weight: 700;
   color: #FFFFFF;
+  margin-top: 16px;
+  text-shadow: 0px 2px 12px rgba(124, 58, 237, 0.35);
 }
 
 .home h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
   color: #7C3AED;
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-bottom: 25px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  text-shadow: 0px 2px 10px rgba(124, 58, 237, 0.45);
 }
 
-/* Botões Sociais */
 .socialCards {
   display: flex;
   gap: 20px;
@@ -72,81 +72,202 @@
 /* --- SEÇÃO SOBRE / CONTATOS --- */
 .about {
   padding: 60px 20px;
-  text-align: center;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-.about h2 {
-  color: #7C3AED;
-  font-weight: 500;
-  font-size: 1.8rem;
-  margin-bottom: 35px;
 }
 
 .aboutContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-  text-align: left;
+  justify-content: center;
+  gap: 30px;
+  align-items: stretch;
 }
 
-.contato, .sobreMim, .tecnologias {
-  flex: 1 1 280px;
+.infoCard {
+  background: #18181B;
+  border: 1px solid #27272A;
+  border-radius: 16px;
+  padding: 30px 24px;
+  flex: 1 1 320px;
+  max-width: 360px; 
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
 }
 
-.contato h2, .sobreMim h2, .tecnologias h2 {
+.sobreMimCard {
+  max-width: 440px; 
+}
+
+.infoCard:hover {
+  border-color: rgba(124, 58, 237, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transform: translateY(-4px);
+}
+
+.infoCard h2 {
+  color: #7C3AED; 
+  font-size: 1.75rem;
+  font-weight: 700;
   text-align: center;
-}
-
-.sobreMim p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  color: #D1D5DB;
+  margin-bottom: 24px;
+  text-shadow: 0px 2px 10px rgba(124, 58, 237, 0.4);
 }
 
 .contato p {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   color: #D1D5DB;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  font-size: 15px;
 }
 
 .contactIcon {
   color: #7C3AED;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.contactLink {
+  color: #D1D5DB;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  word-break: break-all;
+}
+
+.contactLink:hover {
+  color: #7C3AED;
+  text-decoration: underline;
+}
+
+.cvButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #262626;
+  color: #F9FAFB;
+  border: 1px solid #333333;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: auto;
+  width: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cvButton:hover {
+  background-color: #7C3AED;
+  border-color: #7C3AED;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
+}
+
+.sobreMim p {
+  margin-bottom: 14px;
+  line-height: 1.6;
+  color: #D1D5DB;
+  font-size: 14.5px;
+}
+
+.sobreMim strong {
+  color: #FFFFFF;
 }
 
 .techCards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 12px;
   justify-content: center;
-  margin-top: 20px;
+  align-content: center;
+  flex-grow: 1;
 }
 
 .techCard {
   background: #262626;
-  padding: 12px 20px;
+  padding: 10px 18px; 
   text-align: center;
   border-radius: 50px;
+  font-size: 14.5px; 
   font-weight: 500;
   transition: all 0.3s ease;
   border: 1px solid #333333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #E4E4E7;
 }
 
-.techCard:hover {
-  background: #7C3AED;
-  border-color: #7C3AED;
-  transform: translateY(-2px);
+.techCard.html:hover {
+  background: #E34F26;
+  border-color: #E34F26;
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(227, 79, 38, 0.4);
 }
 
-@media (max-width: 768px) {
-  .aboutContainer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.techCard.css:hover {
+  background: #1572B6;
+  border-color: #1572B6;
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(21, 114, 182, 0.4);
+}
+
+.techCard.js:hover {
+  background: #F7DF1E;
+  border-color: #F7DF1E;
+  color: #000000;
+  box-shadow: 0 4px 15px rgba(247, 223, 30, 0.4);
+}
+
+.techCard.ts:hover {
+  background: #3178C6;
+  border-color: #3178C6;
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(49, 120, 198, 0.4);
+}
+
+.techCard.react:hover {
+  background: #61DAFB;
+  border-color: #61DAFB;
+  color: #000000;
+  box-shadow: 0 4px 15px rgba(97, 218, 251, 0.4);
+}
+
+.techCard.next:hover {
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+  color: #000000;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.techCard.python:hover {
+  background: #3776AB;
+  border-color: #3776AB;
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(55, 118, 171, 0.4);
+}
+
+.techCard.git:hover {
+  background: #F05032;
+  border-color: #F05032;
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(240, 80, 50, 0.4);
+}
+
+.techCard.github:hover {
+  background: #555555;
+  border-color: #777777;
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 900px) {
+  .infoCard, .sobreMimCard {
+    max-width: 100%;
   }
 }

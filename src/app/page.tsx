@@ -1,6 +1,19 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { 
+  FaLinkedin, 
+  FaGithub, 
+  FaEnvelope, 
+  FaPhoneAlt, 
+  FaFileDownload,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaPython,
+  FaGitAlt
+} from "react-icons/fa";
+import { SiTypescript, SiNextdotjs } from "react-icons/si";
 
 export default function Home() {
   return (
@@ -42,46 +55,59 @@ export default function Home() {
 
       <section className={styles.about}>
         <div className={styles.aboutContainer}>
-          <div className={styles.contato}>
+          <div className={`${styles.infoCard} ${styles.contato}`}>
             <h2>Contatos</h2>
             <p>
               <FaEnvelope className={styles.contactIcon} />
-              <strong>Email:</strong> paiva.erick2001@gmail.com
+              <strong>Email:</strong>{" "}
+              <a href="mailto:paiva.erick2001@gmail.com" className={styles.contactLink}>
+                paiva.erick2001@gmail.com
+              </a>
             </p>
             <p>
-              <FaPhoneAlt className={styles.contactIcon} />
-              <strong>Celular:</strong> +55 (21) 96958-7080
+              <p>
+                <FaPhoneAlt className={styles.contactIcon} />
+                <strong>Celular:</strong> +55 (21) 96958-7080
+              </p>
             </p>
+
+            <a 
+              href="/Currículo-Erick-de-Paiva-Desenvolvedor.pdf" 
+              download="Currículo-Erick-de-Paiva-Desenvolvedor.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.cvButton}
+            >
+              <FaFileDownload size={18} />
+              <span>Baixar Currículo</span>
+            </a>
           </div>
 
-          <div className={styles.sobreMim}>
+          <div className={`${styles.infoCard} ${styles.sobreMimCard} ${styles.sobreMim}`}>
             <h2>Sobre mim</h2>
             <p>
-              Sou estudante de Análise e Desenvolvimento de Sistemas, com foco e dedicação contínua aos estudos em programação.
+              Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, com foco e dedicação aos estudos em programação / desenvolvimento <strong>Full-Stack</strong>.
             </p>
             <p>
-              Tenho grande interesse por tecnologia, busco sempre desenvolver minha lógica de programação e estruturar soluções de forma organizada e eficiente.
-            </p>
-            <p>
-              Também me preocupo com a construção de interfaces bem estruturadas e visualmente agradáveis, trazendo funcionalidade e excelente experiência do usuário.
+              Busco sempre evoluir minha <strong>lógica de programação</strong> para construir interfaces bonitas e intuitivas, sempre mantendo o <strong>código limpo</strong> e bem organizado.
             </p>
             <p>
               Estou em constante evolução e motivado a crescer profissionalmente na área de tecnologia.
             </p>
           </div>
 
-          <div className={styles.tecnologias}>
+          <div className={`${styles.infoCard} ${styles.tecnologias}`}>
             <h2>Tecnologias</h2>
             <div className={styles.techCards}>
-              <div className={styles.techCard}>HTML</div>
-              <div className={styles.techCard}>CSS</div>
-              <div className={styles.techCard}>JavaScript</div>
-              <div className={styles.techCard}>TypeScript</div>
-              <div className={styles.techCard}>React</div>
-              <div className={styles.techCard}>Next.js</div>
-              <div className={styles.techCard}>Python</div>
-              <div className={styles.techCard}>Git</div>
-              <div className={styles.techCard}>GitHub</div>
+              <div className={`${styles.techCard} ${styles.html}`}><FaHtml5 size={16} /> HTML</div>
+              <div className={`${styles.techCard} ${styles.css}`}><FaCss3Alt size={16} /> CSS</div>
+              <div className={`${styles.techCard} ${styles.js}`}><FaJs size={16} /> JavaScript</div>
+              <div className={`${styles.techCard} ${styles.ts}`}><SiTypescript size={15} /> TypeScript</div>
+              <div className={`${styles.techCard} ${styles.react}`}><FaReact size={16} /> React</div>
+              <div className={`${styles.techCard} ${styles.next}`}><SiNextdotjs size={15} /> Next.js</div>
+              <div className={`${styles.techCard} ${styles.python}`}><FaPython size={16} /> Python</div>
+              <div className={`${styles.techCard} ${styles.git}`}><FaGitAlt size={16} /> Git</div>
+              <div className={`${styles.techCard} ${styles.github}`}><FaGithub size={16} /> GitHub</div>
             </div>
           </div>
         </div>
