@@ -2,8 +2,12 @@
   text-align: center;
   padding: 80px 20px 60px 20px;
   background: linear-gradient(to right, #111111, #1A1A1A);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Foto de Perfil com Hover e Borda Verde */
 .fotoPerfil {
   width: 180px;
   max-width: 40%;
@@ -12,6 +16,12 @@
   border: 5px solid #25D366;
   margin-bottom: 20px;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fotoPerfil:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
 }
 
 .home h1 {
@@ -19,6 +29,7 @@
   font-weight: 600;
   letter-spacing: -1px;
   margin-bottom: 5px;
+  color: #FFFFFF;
 }
 
 .home h2 {
@@ -28,17 +39,18 @@
   margin-bottom: 25px;
 }
 
+/* Botões Sociais */
 .socialCards {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   justify-content: center;
 }
 
 .socialCard {
   background: #262626;
-  padding: 14px 22px;
+  padding: 12px 24px;
   border-radius: 50px;
-  transition: 0.4s;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -46,13 +58,18 @@
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
+  border: 1px solid #333333;
 }
 
 .socialCard:hover {
   background: #7C3AED;
-  color: #fff;
+  color: #ffffff;
+  border-color: #7C3AED;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
 }
 
+/* --- SEÇÃO SOBRE / CONTATOS --- */
 .about {
   padding: 60px 20px;
   text-align: center;
@@ -93,11 +110,13 @@
 .contato p {
   margin-bottom: 15px;
   color: #D1D5DB;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.contato p i {
+.contactIcon {
   color: #7C3AED;
-  margin-right: 8px;
 }
 
 .techCards {
@@ -114,11 +133,14 @@
   text-align: center;
   border-radius: 50px;
   font-weight: 500;
-  transition: 0.4s;
+  transition: all 0.3s ease;
+  border: 1px solid #333333;
 }
 
 .techCard:hover {
   background: #7C3AED;
+  border-color: #7C3AED;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {

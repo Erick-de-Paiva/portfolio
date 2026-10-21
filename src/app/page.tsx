@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
           priority
         />
         <h1>Erick de Paiva Alberto</h1>
-        <h2>Desenvolvedor</h2>
+        <h2>Desenvolvedor Full-Stack</h2>
 
         <div className={styles.socialCards}>
           <a
@@ -23,7 +24,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className={styles.socialCard}
           >
-            <i className="fa-brands fa-linkedin"></i>
+            <FaLinkedin size={20} />
             <span>LinkedIn</span>
           </a>
 
@@ -33,7 +34,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className={styles.socialCard}
           >
-            <i className="fa-brands fa-github"></i>
+            <FaGithub size={20} />
             <span>GitHub</span>
           </a>
         </div>
@@ -44,11 +45,11 @@ export default function Home() {
           <div className={styles.contato}>
             <h2>Contatos</h2>
             <p>
-              <i className="fa-solid fa-envelope"></i>
+              <FaEnvelope className={styles.contactIcon} />
               <strong>Email:</strong> paiva.erick2001@gmail.com
             </p>
             <p>
-              <i className="fa-solid fa-phone"></i>
+              <FaPhoneAlt className={styles.contactIcon} />
               <strong>Celular:</strong> +55 (21) 96958-7080
             </p>
           </div>
