@@ -1,10 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from 'next';
+
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+const repoName = 'portfolio';
+
+const nextConfig: NextConfig = {
   output: 'export',
+  basePath: isGithubActions ? `/${repoName}` : '',
   images: {
     unoptimized: true,
   },
-  devIndicators: false,
 };
 
 export default nextConfig;

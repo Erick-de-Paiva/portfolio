@@ -72,8 +72,8 @@ export default function Home() {
             </p>
 
             <a 
-              href="/Currículo-Erick-de-Paiva-Desenvolvedor.pdf" 
-              download="Currículo-Erick-de-Paiva-Desenvolvedor.pdf"
+              href="/currículo-Erick-de-Paiva-Desenvolvedor.pdf" 
+              download="currículo-Erick-de-Paiva-Desenvolvedor.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.cvButton}
