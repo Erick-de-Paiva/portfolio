@@ -65,10 +65,8 @@ export default function Home() {
               </a>
             </p>
             <p>
-              <p>
-                <FaPhoneAlt className={styles.contactIcon} />
-                <strong>Celular:</strong> +55 (21) 96958-7080
-              </p>
+              <FaPhoneAlt className={styles.contactIcon} />
+              <strong>Celular:</strong> +55 (21) 96958-7080
             </p>
 
             <a 

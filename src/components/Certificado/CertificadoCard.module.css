@@ -1,0 +1,128 @@
+.card {
+  background-color: #18181B; 
+  border: 1px solid #27272A;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #8b5cf6;
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.15);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 260px;
+  background-color: #09090B; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #27272A;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+.placeholderIcon {
+  color: #8b5cf6;
+  opacity: 0.8;
+}
+
+.content {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+  margin-bottom: 0.5rem;
+}
+
+.issuer {
+  font-weight: 600;
+  color: #a78bfa;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f4f4f5;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+  margin-top: auto;
+}
+
+.tag {
+  background-color: #27272a;
+  color: #e4e4e7;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  border: 1px solid #3f3f46;
+  transition: all 0.2s ease;
+  cursor: default; 
+}
+
+.tag:hover {
+  background-color: #3f3f46;
+  border-color: #8b5cf6; 
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #27272a;
+  color: #f4f4f5;
+  border: 1px solid #8b5cf6;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #8b5cf6;
+  color: #ffffff;
+}
+
+.imageLink {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.imageLink:hover .image {
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
