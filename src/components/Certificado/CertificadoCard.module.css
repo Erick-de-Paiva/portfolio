@@ -5,13 +5,16 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 20px -2px rgba(139, 92, 246, 0.2);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-4px);
   border-color: #8b5cf6;
-  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px -2px rgba(139, 92, 246, 0.55), 
+    0 0 20px 2px rgba(139, 92, 246, 0.35);
 }
 
 .imageContainer {
@@ -100,7 +103,7 @@
   padding: 0.6rem;
   background-color: #27272a;
   color: #f4f4f5;
-  border: 1px solid #8b5cf6;
+  border: 1px solid #333333;
   border-radius: 8px;
   font-size: 0.875rem;
   font-weight: 600;
