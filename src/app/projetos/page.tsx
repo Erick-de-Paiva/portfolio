@@ -4,13 +4,13 @@ const meusProjetos = [
   {
     title: 'Next.js Admin Template',
     category: 'Projeto de Curso',
-    description: 'Um template de painel administrativo moderno, responsivo e altamente customizável para aplicações web, contando com arquitetura limpa e componentes reutilizáveis.',
+    description: 'Um template de painel administrativo **moderno**, **responsivo** e altamente customizável para aplicações web, contando com **arquitetura limpa** e **componentes reutilizáveis**.',
     features: [
-      'Autenticação Completa: Suporte a login tradicional (E-mail e Senha) e autenticação social via Google utilizando o Firebase.',
-      'Alternância de Tema (Claro / Escuro): Sistema de troca de temas integrado que persiste a preferência do utilizador no localStorage.',
-      'Totalmente Responsivo: Layout adaptável e otimizado para computadores, tablets e telemóveis.',
-      'Gestão de Sessão & Cookies: Proteção de rotas e persistência de sessão integrada com cookies seguros.',
-      'Estilização Moderna: Design limpo construído com o auxílio do Tailwind CSS.',
+      '**Autenticação Completa:** Suporte a login tradicional (E-mail e Senha) e autenticação social via **Google** utilizando o **Firebase**.',
+      '**Alternância de Tema (Claro / Escuro):** Sistema de troca de temas integrado que persiste a preferência do utilizador no **localStorage**.',
+      '**Totalmente Responsivo:** Layout adaptável e otimizado para computadores, tablets e telemóveis.',
+      '**Gestão de Sessão & Cookies:** Proteção de rotas e persistência de sessão integrada com **cookies seguros**.',
+      '**Estilização Moderna:** Design limpo construído com o auxílio do **Tailwind CSS**.',
     ],
     technologies: ['Next.js 14', 'React 18', 'TypeScript', 'Tailwind CSS', 'Firebase', 'Cookies & LocalStorage'],
     images: [
@@ -24,12 +24,12 @@ const meusProjetos = [
     title: 'Projeto Next.js CRUD (Cadastro Simples)',
     category: 'Projeto de Curso',
     description:
-      'Aplicação full-stack simplificada desenvolvida em Next.js para gerenciamento completo de clientes, com operações CRUD em tempo real e integração com banco de dados em nuvem.',
+      'Aplicação **full-stack** simplificada desenvolvida em **Next.js** para gerenciamento completo de clientes, com operações **CRUD** em tempo real e integração com banco de dados em **nuvem**.',
     features: [
-      'Operações completas de Create, Read, Update e Delete (CRUD)',
-      'Persistência de dados em tempo real utilizando Firebase Cloud Firestore',
-      'Interface moderna e responsiva com Tailwind CSS e alternância de telas dinâmicas',
-      'Tipagem estrita e segurança de dados desenvolvida com TypeScript',
+      'Operações completas de **Create, Read, Update e Delete (CRUD)**',
+      'Persistência de dados em tempo real utilizando **Firebase Cloud Firestore**',
+      'Interface moderna e responsiva com **Tailwind CSS** e alternância de telas dinâmicas',
+      'Tipagem estrita e segurança de dados desenvolvida com **TypeScript**',
     ],
     technologies: ['Next.js 14', 'React 18', 'TypeScript', 'Tailwind CSS', 'Firebase', 'Cloud Firestore'],
     images: [

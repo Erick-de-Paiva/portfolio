@@ -6,13 +6,25 @@ import styles from './ProjetoCard.module.css';
 
 export interface ProjetoProps {
   title: string;
-  description: React.ReactNode;
-  features?: React.ReactNode[];
+  description: string;
+  features?: string[];
   technologies: string[];
   images: string[];
   githubUrl?: string;
   category?: string;
 }
+
+const BoldText = ({ text }: { text: string }) => {
+  if (!text) return null;
+  const parts = text.split(/\*\*(.*?)\*\*/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? <strong key={i}>{part}</strong> : part
+      )}
+    </>
+  );
+};
 
 export default function ProjetoCard({
   title,
@@ -62,14 +74,18 @@ export default function ProjetoCard({
           {category && <span className={styles.categoryBadge}>{category}</span>}
         </div>
 
-        <p className={styles.description}>{description}</p>
+        <p className={styles.description}>
+          <BoldText text={description} />
+        </p>
 
         {features.length > 0 && (
           <div className={styles.featuresSection}>
             <span className={styles.featuresTitle}>Principais recursos:</span>
             <ul className={styles.featuresList}>
               {features.map((feature, index) => (
-                <li key={index}>{feature}</li>
+                <li key={index}>
+                  <BoldText text={feature} />
+                </li>
               ))}
             </ul>
           </div>
