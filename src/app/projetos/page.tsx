@@ -21,6 +21,26 @@ const meusProjetos = [
     githubUrl: 'https://github.com/Erick-de-Paiva/projeto-template-admin',
   },
   {
+    title: 'Quiz Full-Stack Interativo',
+    category: 'Projeto de Curso',
+    description: 'Uma aplicação web de perguntas e respostas, desenvolvida com **arquitetura full-stack**, animações dinâmicas e design responsivo.',
+    features: [
+      '**Temporizador Dinâmico:** Círculo regressivo animado (**react-countdown-circle-timer**) com transição de cores conforme o tempo esgota.',
+      '**Efeito de Revelação (Flip Cards):** Transição visual suave ao selecionar uma resposta para mostrar o resultado correto ou incorreto.',
+      '**Rotas Dinâmicas de API:** Estrutura full-stack no **Next.js (Pages Router)** com endpoints dedicados para busca de questões e gestão do questionário.',
+      '**Tela de Estatísticas:** Cálculo automático do total de perguntas, respostas certas e aproveitamento percentual ao finalizar o quiz.',
+      '**Design Moderno e Responsivo:** Estilização limpa e focada na experiência do usuário.',
+    ],
+    technologies: ['Next.js (Pages Router)', 'React', 'TypeScript', 'Tailwind CSS', 'react-countdown-circle-timer'],
+    images: [
+      '/img/projetos/quiz-resultado-final.png',
+      '/img/projetos/quiz-tela-padrao.png',
+      '/img/projetos/quiz-tela-acerto.png',
+      '/img/projetos/quiz-tela-erro.png',
+    ],
+    githubUrl: 'https://github.com/Erick-de-Paiva/projeto-quiz-fullstack',
+  },
+  {
     title: 'Projeto Next.js CRUD (Cadastro Simples)',
     category: 'Projeto de Curso',
     description:
@@ -38,6 +58,24 @@ const meusProjetos = [
       '/img/projetos/next-crud-alteracao-cadastro.png',
     ],
     githubUrl: 'https://github.com/Erick-de-Paiva/projeto-next-crud',
+  },
+  {
+    title: 'Porta Premiada (Jogo do Monty Hall)',
+    category: 'Projeto de Curso',
+    description: 'Projeto desenvolvido com **Next.js** e **React**, aplicando conceitos modernos de desenvolvimento web, componentização, tipagem estática com **TypeScript** e estilização com **CSS Modules**.',
+    features: [
+      '**Configuração Dinâmica:** Tela inicial interativa que permite personalizar em tempo real a quantidade total de portas e definir qual delas esconde o prêmio.',
+      '**Validação de Parâmetros:** Sistema de segurança na primeira página que valida as entradas do usuário, garantindo que a porta com o presente nunca seja superior ao número total de portas configuradas.',
+      '**Lógica Interativa de Seleção:** Sistema completo de abertura de portas, gerenciamento de estados e controle de fluxo do jogo.',
+      '**Estilização Modular:** Interface estilizada utilizando **CSS Modules** para garantir organização limpa e escopo isolado por componente.',
+      '**Tipagem Estrita e Build Validado:** Código robusto e tipado com **TypeScript**, assegurando segurança de tipos e build de produção livre de erros.',
+    ],
+    technologies: ['React', 'Next.js', 'TypeScript', 'CSS Modules'],
+    images: [
+      '/img/projetos/porta-premiada-tela-inicio.png',
+      '/img/projetos/porta-premiada-tela-jogo.png',
+    ],
+    githubUrl: 'https://github.com/Erick-de-Paiva/projeto-porta-premiada',
   },
 ];
 
