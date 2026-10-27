@@ -21,6 +21,26 @@ const meusProjetos = [
     githubUrl: 'https://github.com/Erick-de-Paiva/projeto-template-admin',
   },
   {
+    title: 'Planej.ai - Educador Financeiro com IA',
+    category: 'Bootcamp Santander 2026',
+    description: 'Aplicação web inteligente de planejamento financeiro pessoal desenvolvida com **React**, **TypeScript**, **Tailwind CSS** e integrada à **API do Gemini (IA Generativa)**. O projeto transforma dados preenchidos pela pessoa usuária em um diagnóstico financeiro personalizado.',
+    features: [
+      '**Formulado Multi-etapas guiado:** Coleta de renda, custos fixos, dívidas e objetivos financeiros.',
+      '**Diagnóstico com IA:** Análise estruturada gerada pelo **Google Gemini** com base nos dados do usuário.',
+      '**Indicador de Viabilidade:** Classificação visual se a meta é viável, se precisa de ajustes ou se é inviável no prazo.',
+      '**Chat Interativo com o Educador Financeiro:** O usuário pode fazer perguntas de acompanhamento e tirar dúvidas diretamente no card de insights, mantendo uma conversa consultiva com a IA.',
+      '**Persistência Local (localStorage):** O histórico de simulações e as mensagens do chat são salvos localmente para que o usuário não perca sua conversa.',
+      '**Tema Claro e Escuro:** Suporte completo a diferentes preferências visuais.',
+    ],
+    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Lucide React', 'Google Gemini API'],
+    images: [
+      '/img/projetos/bootcamp-santander-2026-diagnostico-chat.png',
+      '/img/projetos/bootcamp-santander-2026-historico.png',
+      '/img/projetos/bootcamp-santander-2026-tela-inicial.png',
+    ],
+    githubUrl: 'https://github.com/Erick-de-Paiva/Bootcamp-Santander-2026-AI-React-Front-end',
+  },
+  {
     title: 'Quiz Full-Stack Interativo',
     category: 'Projeto de Curso',
     description: 'Uma aplicação web de perguntas e respostas, desenvolvida com **arquitetura full-stack**, animações dinâmicas e design responsivo.',

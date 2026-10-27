@@ -17,7 +17,7 @@ const meusCertificados = [
     hours: '42h',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Gemini API', 'localStorage'],
     credentialUrl: 'https://www.dio.me/certificate/GT9JE7ZQ',
-    imageUrl: '/img/certificados/certificado-bootcamp-santander-dio.png',
+    imageUrl: '/img/certificados/certificado-bootcamp-santander-dio-2026.png',
   },
   {
     title: 'Python',
