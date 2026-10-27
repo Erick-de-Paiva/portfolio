@@ -8,7 +8,7 @@ const meusCertificados = [
     hours: '28.5h',
     technologies: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3'],
     credentialUrl: 'https://ude.my/UC-4da21840-c8cf-45ca-9c37-5809233b9da5',
-    imageUrl: '/img/certificado-react-nextjs-udemy.jpg',
+    imageUrl: '/img/certificados/certificado-react-nextjs-udemy.jpg',
   },
   {
     title: 'Santander 2026 - AI React Front-end',
@@ -17,7 +17,7 @@ const meusCertificados = [
     hours: '42h',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Gemini API', 'localStorage'],
     credentialUrl: 'https://www.dio.me/certificate/GT9JE7ZQ',
-    imageUrl: '/img/certificado-bootcamp-santander-dio.png',
+    imageUrl: '/img/certificados/certificado-bootcamp-santander-dio.png',
   },
   {
     title: 'Python',
@@ -26,7 +26,7 @@ const meusCertificados = [
     hours: '8h',
     technologies: ['Python', 'Lógica de Programação', 'POO'],
     credentialUrl: '',
-    imageUrl: '/img/certificado-santander-python.jpg',
+    imageUrl: '/img/certificados/certificado-santander-python.jpg',
   },
   {
     title: 'Algoritmos e Lógica de Programação',
@@ -35,7 +35,7 @@ const meusCertificados = [
     hours: '30.5h',
     technologies: ['Lógica de Programação', 'Algoritmos', 'C', 'C++', 'Java', 'C#', 'Python'],
     credentialUrl: 'https://ude.my/UC-a7f53a57-a6c7-4600-a386-d94d23ea37b8',
-    imageUrl: '/img/certificado-algoritmos-e-logica-udemy.png',
+    imageUrl: '/img/certificados/certificado-algoritmos-e-logica-udemy.png',
   },
   {
     title: 'JavaScript',
@@ -44,7 +44,7 @@ const meusCertificados = [
     hours: '40h',
     technologies: ['JavaScript', 'DOM', 'HTML5', 'CSS3', 'ES6+'],
     credentialUrl: 'https://www.cursoemvideo.com/validacao-de-certificado/',
-    imageUrl: '/img/certificado-curso-em-video-javascript.png',
+    imageUrl: '/img/certificados/certificado-curso-em-video-javascript.png',
   },
   {
     title: 'Discover',
@@ -53,7 +53,7 @@ const meusCertificados = [
     hours: '12h',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'Git', 'GitHub', 'Programação Web'],
     credentialUrl: 'https://app.rocketseat.com.br/certificates/2647c962-ee16-4ec1-8de1-67d86ed28b93',
-    imageUrl: '/img/certificado-rocketseat-discover.png',
+    imageUrl: '/img/certificados/certificado-rocketseat-discover.png',
   },
 ];
 
